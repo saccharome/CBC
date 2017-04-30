@@ -189,7 +189,7 @@ The following databases must be downloaded before proceed scripts run:
 
 * 2.2.1.1 Greengenes 16S rRNA database was downloaded from the [webpage](http://greengenes.secondgenome.com/downloads).
 
-* 2.2.1.2. A release must be chosen, then chosen file __*.fasta.gz__ file.
+* 2.2.1.2. A release must be chosen, then chose __*.fasta.gz__ file.
 
 * 2.2.1.3. In our work, we used the version “The Greengenes Database files from May, 2013”. Any other release should work, we have not tested any other though.
 
