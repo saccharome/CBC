@@ -31,8 +31,8 @@ Microbial collections based exclusively on axenic cultures are time consuming, c
   * __fwd_nex.fa__ _FASTA containing Nextera forward sequence_
   * __rev_nex.fa__ _FASTA containing Nextera reverse sequence_
   * __rev_primer.fa__ _FASTA containing reverse primer sequence_
-  * __error_margin__ _Number of margin of error for barcode prediction; eg. 3 nt_
-  * __max_length__ _Maximum length accepted of sequences; eg. 1600 nt_
+  * __error_margin__ _Number of margin of error for barcode prediction; e.g. 3 nt_
+  * __max_length__ _Maximum length accepted of sequences; e.g. 1600 nt_
   * __output_dir__ _Directory of outputted files_
 * 1.1.8. Example of command line:
 
@@ -133,7 +133,7 @@ perl CBC_script3.pl seqs.fa 16S_db.fa output_directory
 
   * __-i__ _Input directory containing “.redemult” files_
   * __-o__ _Output directory_
-  * __-id__ _Identity of clustering (eg. 0.97)_
+  * __-id__ _Identity of clustering (e.g. 0.97)_
 
 * 1.4.4. Example of command line:
 
@@ -179,7 +179,7 @@ Linux version 2.6.32-642.el6.x86_64 (mockbuild@x86-033.build.eng.bos.redhat.com)
 usearch v8.0.1517_i86linux64
 ```
 
-* 2.1.2.2. An environmental variable must be created to USEARCH in PATH, eg. __$uv81__. Change the variable for USEARCH inside each script as required.
+* 2.1.2.2. An environmental variable must be created to USEARCH in PATH, e.g. __$uv81__. Change the variable for USEARCH inside each script as required.
 
 ### 2.2. Databases
 
