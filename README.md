@@ -198,9 +198,9 @@ The following databases must be downloaded before proceed scripts run:
 
 * 2.2.2.1. [UCHIME](https://doi.org/10.1093/bioinformatics/btr381) is an algorithm installed with USEARCH and requires a _gold_ database of chimera-free 16S rRNA gene sequences. The [database](http://drive5.com/uchime/uchime_download.html) was downloaded directly from [drive5.com](http://www.drive5.com/) website.
 
-## 3. Toy example
+## 3. Example
 
-We uploaded a small dataset of CCSs as a [toy example](https://github.com/saccharome/CBC/tree/master/Toy/Toy%20CCS%20dataset), as well as the files containing the [expected reports](https://github.com/saccharome/CBC/tree/master/Toy/Expected%20reports) of each CBC_script using this toy.
+We uploaded a small dataset of CCSs as an [example](https://github.com/saccharome/CBC/tree/master/example/ccs_dataset_example), as well as the files containing the [expected reports](https://github.com/saccharome/CBC/tree/master/example/expected_reports) of each CBC_script using this file.
 
 ## 4. Bugs
 
