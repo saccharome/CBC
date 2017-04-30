@@ -199,7 +199,7 @@ The following databases must be downloaded before proceed scripts run:
 
 ## 3. Toy example
 
-We uploaded a small dataset as a [toy example](https://github.com/saccharome/CBC/tree/master/Toy/Toy%20CCS%20dataset) as well as the files containing the [expected reports](https://github.com/saccharome/CBC/tree/master/Toy/Expected%20reports) of each CBC_script using this toy.
+We uploaded a small dataset containing 100 CCSs as a [toy example](https://github.com/saccharome/CBC/tree/master/Toy/Toy%20CCS%20dataset), as well as the files containing the [expected reports](https://github.com/saccharome/CBC/tree/master/Toy/Expected%20reports) of each CBC_script using this toy.
 
 ## 4. Bugs
 
