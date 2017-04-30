@@ -1,5 +1,5 @@
-Input file____________________	/home/jaderson.armanhi/scripts/paper2_scripts/paper2_github_v1/t1/ccs_100.fa
-Output dir____________________	/home/jaderson.armanhi/scripts/paper2_scripts/paper2_github_v1/t1/script1_output
+Input file____________________	/yourdirectory/ccs_toy.fasta
+Output dir____________________	/yourdirectory/script1_output
 Number of CCS sequences_______	100
 Length filter_________________	1 to 1600
 Filtered sequences____________	99
