@@ -121,7 +121,7 @@ perl CBC_script3.pl seqs.fa 16S_db.fa output_directory
   * __.db_nohit.fasta.dataset_nohit.fasta__ _FASTA of sequences without hit against dataset_
   * __.filtered__ _FASTA of reliable sequences_
 
-* 1.3.8. FASTA sequences must be redemultiplexed in each well for __script4.pl__.
+* 1.3.8. FASTA sequences must be redemultiplexed in each well for __CBC_script4.pl__.
 
 ### 1.4. Script #4: Two-step clustering
 
@@ -187,7 +187,7 @@ The following databases must be downloaded before proceed scripts run:
 
 #### 2.2.1. Greengenes
 
-* 2.2.1.1 Greengenes 16S rRNA database was downloaded from the [webpage](http://greengenes.secondgenome.com/downloads)
+* 2.2.1.1 Greengenes 16S rRNA database was downloaded from the [webpage](http://greengenes.secondgenome.com/downloads).
 
 * 2.2.1.2. A release must be chosen, then chosen file __*.fasta.gz__ file.
 
