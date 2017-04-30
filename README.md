@@ -1,12 +1,12 @@
 # Overview: community-based culture collection (CBC) scripts
 
 ## _Background_
-Microbial collections based exclusively on axenic cultures are time consuming, costly and may result in the loss of relevant biological information, since there are microorganisms that might depend on microbe-microbe interactions for their growth. As an alternative, we explore the concept of [community-based culture collections (CBC)](https://www.nature.com/articles/srep29543) that is based on the isolation of colonies containing single or multiple microorganisms. By using this approach, we created a community-based culture collection with isolates from sugarcane plant organs. We developed a method to annotate the community-based isolates through a multiplex strategy for pooling and sequencing near-full-length ribosomal gene amplicons. These method provide a high-throughput strategy for identifying isolated microbes in culture collection and allow fast and accurate cross-referencing with the [sugarcane culture-independent community profiling](https://www.nature.com/articles/srep28774).
+Microbial collections based exclusively on axenic cultures are time consuming, costly and may result in the loss of relevant biological information, since there are microorganisms that might depend on microbe-microbe interactions for their growth. As an alternative, we explore the concept of community-based culture collections (CBC) that is based on the isolation of colonies containing single or multiple microorganisms. By using this approach, we created a community-based culture collection with isolates from sugarcane plant organs. We developed a method to annotate the community-based isolates through a [multiplex strategy](https://www.nature.com/articles/srep29543) for pooling and sequencing near-full-length ribosomal gene amplicons. This method provides a high-throughput strategy for identifying isolated microbes in our sugarcane community-based culture collection and allows fast and accurate cross-referencing with the [sugarcane culture-independent community profiling](https://www.nature.com/articles/srep28774).
 
 # Documentation
 
 ## 1. Introduction
-"CBC" is a program that combine four independent scripts. Scripts were designed to optimize demultiplexing, quality filtering of sequences and clustering. The scripts were tested in a dataset of a community-based culture collection and described in this [paper](https://www.nature.com/articles/srep29543).
+"CBC" is a program that combine four independent major scripts. Scripts were designed to optimize [demultiplexing](https://github.com/saccharome/CBC/blob/master/README.md#11-script-1-demultiplexing), [quality filtering](https://github.com/saccharome/CBC/blob/master/README.md#12-script-2-filtering-chimeras-and-non-16s-sequences) and [reliability](https://github.com/saccharome/CBC/blob/master/README.md#13-script-3-filtering-for-reliability) of sequences and [clustering](https://github.com/saccharome/CBC/blob/master/README.md#14-script-4-two-step-clustering). The scripts were tested in a dataset of a community-based culture collection and described in this [paper](https://www.nature.com/articles/srep29543).
 
 ### 1.1. Script #1: Demultiplexing
 
@@ -20,7 +20,7 @@ Microbial collections based exclusively on axenic cultures are time consuming, c
 
 * 1.1.5. Barcode-trimmed sequences are outputted in plus-strand based on the reverse primer alignment.
 
-* 1.1.6. Demultiplexed sequences header are modified to include the label of demultiplexing. Headers receive “;barcodelabel=” following by label. That lack at least one of the three barcodes are considered undemultiplexed.
+* 1.1.6. Demultiplexed sequences header are modified to include the label of demultiplexing. Headers receive __;barcodelabel=__ following by label. That lack at least one of the three barcodes are considered undemultiplexed.
 
 * 1.1.7. Parameters must be inputted in the following order:
 
@@ -61,7 +61,7 @@ perl script1.pl ccs_100.fa plate_bc.fa rows_bc.fa column_bc.fa fwd_nex.fa rev_ne
 
 * 1.2.2. This script uses demultiplexed sequences, outputted from __script1.pl__.
 
-* 1.2.3. In order to optimize processing, a _cat_ command can be used to join all barcode-labeled sequences in a single file. Files extension must be “.demult”.
+* 1.2.3. In order to optimize processing, a _cat_ command can be used to join all barcode-labeled sequences in a single file. Files extension must be __.demult__.
 
 * 1.2.4. After filtering and chimera/non-specific sequences discarded, sequences are redemultiplexed.
 
@@ -95,7 +95,7 @@ perl script2.pl -i demultiplexed.demult -o output_directory -ch chimera_free.fa 
 
 * 1.3.3. Alignments were performed using usearch_global algorithm from USEARCH package considering threshold of 0.97.
 
-* 1.3.4. Sequences maintained after filtering are outputted in a “.filtered” file.
+* 1.3.4. Sequences maintained after filtering are outputted in a ___.filtered___ file.
 
 * 1.3.5. Parameters must be inputted in the following order:
 
@@ -195,11 +195,11 @@ The following databases must be downloaded before proceed scripts run:
 
 #### 2.2.2. UCHIME chimera-free 16S database
 
-* 2.2.2.1. [UCHIME](https://doi.org/10.1093/bioinformatics/btr381) is an algorithm installed with USEARCH and requires a “gold” database of chimera-free 16S sequences. The [database](http://drive5.com/uchime/uchime_download.html) was downloaded directly from drive5.com website.
+* 2.2.2.1. [UCHIME](https://doi.org/10.1093/bioinformatics/btr381) is an algorithm installed with USEARCH and requires a _gold_ database of chimera-free 16S sequences. The [database](http://drive5.com/uchime/uchime_download.html) was downloaded directly from drive5.com website.
 
 ## 3. Bugs
 
 Please submit any problems or requests [here](https://github.com/saccharome/CBC/issues).
 
 ## 4. Citation
-Armanhi, J. S. L.; de Souza, R. S. C.; de Araújo, L. M.; Okura, V. K.; Mieczkowski, P.; Imperial, J.; Arruda, P. Multiplex amplicon sequencing for microbe identification in community-based culture collections. Sci. Rep. 6, 29543; doi:10.1038/srep29543 (2016). (www.nature.com/articles/srep29543/)
+Armanhi, J. S. L.; de Souza, R. S. C.; de Araújo, L. M.; Okura, V. K.; Mieczkowski, P.; Imperial, J.; Arruda, P. Multiplex amplicon sequencing for microbe identification in community-based culture collections. Sci. Rep. 6, 29543; doi:10.1038/srep29543 (2016) (www.nature.com/articles/srep29543/).
