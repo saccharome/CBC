@@ -1,12 +1,12 @@
 # Overview: community-based culture collection (CBC) scripts
 
 ## _Background_
-Microbial collections based exclusively on axenic cultures are time consuming, costly and may result in the loss of relevant biological information, since there are microorganisms that might depend on microbe-microbe interactions for their growth. As an alternative, we explore the concept of community-based culture collections (CBC) that is based on the isolation of colonies containing single or multiple microorganisms. By using this approach, we created a community-based culture collection with isolates from sugarcane plant organs. We developed a method to annotate the community-based isolates through a multiplex strategy for pooling and sequencing near-full-length ribosomal gene amplicons. These method provide a high-throughput strategy for identifying isolated microbes in culture collection and allow fast and accurate cross-referencing with culture-independent community profiling. This dataset contain reads from five plates that were used to the development of these methodologies.
+Microbial collections based exclusively on axenic cultures are time consuming, costly and may result in the loss of relevant biological information, since there are microorganisms that might depend on microbe-microbe interactions for their growth. As an alternative, we explore the concept of [community-based culture collections (CBC)](https://www.nature.com/articles/srep29543) that is based on the isolation of colonies containing single or multiple microorganisms. By using this approach, we created a community-based culture collection with isolates from sugarcane plant organs. We developed a method to annotate the community-based isolates through a multiplex strategy for pooling and sequencing near-full-length ribosomal gene amplicons. These method provide a high-throughput strategy for identifying isolated microbes in culture collection and allow fast and accurate cross-referencing with the [sugarcane culture-independent community profiling](https://www.nature.com/articles/srep28774).
 
 # Documentation
 
 ## 1. Introduction
-"CBC" is a program that combine four independent scripts. Scripts were designed to optimize demultiplexing, quality filtering of sequences and clustering. The scripts were tested in a dataset of a community-based culture collection and described in this [paper](https://www.nature.com/articles/srep29543)
+"CBC" is a program that combine four independent scripts. Scripts were designed to optimize demultiplexing, quality filtering of sequences and clustering. The scripts were tested in a dataset of a community-based culture collection and described in this [paper](https://www.nature.com/articles/srep29543).
 
 ### 1.1. Script #1: Demultiplexing
 
