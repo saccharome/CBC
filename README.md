@@ -37,7 +37,7 @@ Microbial collections based exclusively on axenic cultures are time consuming, c
 * 1.1.8. Example of command line:
 
 ```bash
-perl CBC_script1.pl ccs_100.fa plate_bc.fa rows_bc.fa column_bc.fa fwd_nex.fa rev_nex.fa rev_primer.fa 3 1600 CBC_script1_output
+perl CBC_script1.pl ccs_toy.fa plate_bc.fa rows_bc.fa column_bc.fa fwd_nex.fa rev_nex.fa rev_primer.fa 3 1600 CBC_script1_output
 ```
 
 * 1.1.9. Output files:
