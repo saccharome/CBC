@@ -85,7 +85,7 @@ perl script2.pl -i demultiplexed.demult -o output_directory -ch chimera_free.fa 
   * __04_16S_FILTERED__ _Folder of FASTA sequences filtered from chimera and non-16S sequences_
   * __report.report__ _Number of sequences in each step for each well: demultiplexed, nonchimeras and 16S_
 
-* 1.2.8. FASTA sequences are broken in lines and must be concatenated for script3.pl.
+* 1.2.8. FASTA sequences are broken in lines and must be concatenated for __script3.pl__.
 
 ### 1.3. Script #3: Filtering for reliability
 
