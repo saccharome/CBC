@@ -1,0 +1,13 @@
+Input file____________________	/home/jaderson.armanhi/scripts/paper2_scripts/paper2_github_v1/t1/ccs_100.fa
+Output dir____________________	/home/jaderson.armanhi/scripts/paper2_scripts/paper2_github_v1/t1/script1_output
+Number of CCS sequences_______	100
+Length filter_________________	1 to 1600
+Filtered sequences____________	99
+Out of length filter__________	1
+Adaptor mismatches accepted___	3
+Barcode margin of error_______	3
+Maximum length of sequence____	1600
+Undemult. CCS (>=1 unkn. bc)__	51
+Demultiplexed wells___________	39
+Demultiplexed CCS_____________	48
+Putative chimera (bc desord.)_	0
