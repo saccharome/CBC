@@ -37,7 +37,7 @@ Microbial collections based exclusively on axenic cultures are time consuming, c
 * 1.1.8. Example of command line:
 
 ```bash
-perl script1.pl ccs_100.fa plate_bc.fa rows_bc.fa column_bc.fa fwd_nex.fa rev_nex.fa rev_primer.fa 3 1600 script1_output
+perl CBC_script1.pl ccs_100.fa plate_bc.fa rows_bc.fa column_bc.fa fwd_nex.fa rev_nex.fa rev_primer.fa 3 1600 CBC_script1_output
 ```
 
 * 1.1.9. Output files:
@@ -53,13 +53,13 @@ perl script1.pl ccs_100.fa plate_bc.fa rows_bc.fa column_bc.fa fwd_nex.fa rev_ne
   * __RPRIM.output__ _Tab-separated output of alignment of rev_primer sequence_
   * __.demult__ _Files containing demultiplexed CCSs_
   * __undemultiplexed.undemult__ _IDs of undemultiplex CCSs_
-  * __report.report__ _Numbers obtained and summary of script1.pl run_
+  * __report.report__ _Numbers obtained and summary of CBC_script1.pl run_
 
 ### 1.2. Script #2: Filtering chimeras and non-16S sequences
 
 * 1.2.1. This script aims to filter demultiplexed 16S sequences from chimeras and non-specific sequences based on chimera-free and a large 16S rRNA databases, respectively. The script is based on UCHIME algorithm.
 
-* 1.2.2. This script uses demultiplexed sequences, outputted from __script1.pl__.
+* 1.2.2. This script uses demultiplexed sequences, outputted from __CBC_script1.pl__.
 
 * 1.2.3. In order to optimize processing, a _cat_ command can be used to join all barcode-labeled sequences in a single file. Files extension must be __.demult__.
 
@@ -75,7 +75,7 @@ perl script1.pl ccs_100.fa plate_bc.fa rows_bc.fa column_bc.fa fwd_nex.fa rev_ne
 * 1.2.6. Example of command line:
 
 ```bash
-perl script2.pl -i demultiplexed.demult -o output_directory -ch chimera_free.fa -db 16S_db.fa
+perl CBC_script2.pl -i demultiplexed.demult -o output_directory -ch chimera_free.fa -db 16S_db.fa
 ```
 
 * 1.2.7. Output folders and file:
@@ -85,7 +85,7 @@ perl script2.pl -i demultiplexed.demult -o output_directory -ch chimera_free.fa 
   * __04_16S_FILTERED__ _Folder of FASTA sequences filtered from chimera and non-16S sequences_
   * __report.report__ _Number of sequences in each step for each well: demultiplexed, nonchimeras and 16S_
 
-* 1.2.8. FASTA sequences are broken in lines and must be concatenated for __script3.pl__.
+* 1.2.8. FASTA sequences are broken in lines and must be concatenated for __CBC_script3.pl__.
 
 ### 1.3. Script #3: Filtering for reliability
 
@@ -106,7 +106,7 @@ perl script2.pl -i demultiplexed.demult -o output_directory -ch chimera_free.fa 
 * 1.3.6. Example of command line:
 
 ```bash
-perl script3.pl seqs.fa 16S_db.fa output_directory
+perl CBC_script3.pl seqs.fa 16S_db.fa output_directory
 ```
 
 * 1.3.7. Output files:
@@ -138,7 +138,7 @@ perl script3.pl seqs.fa 16S_db.fa output_directory
 * 1.4.4. Example of command line:
 
 ```bash
-perl script4.pl -i input_directory -o output_root_directory -id uparse_ID
+perl CBC_script4.pl -i input_directory -o output_root_directory -id uparse_ID
 ```
 
 * 1.4.5. Output folders:
