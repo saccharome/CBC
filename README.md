@@ -197,9 +197,13 @@ The following databases must be downloaded before proceed scripts run:
 
 * 2.2.2.1. [UCHIME](https://doi.org/10.1093/bioinformatics/btr381) is an algorithm installed with USEARCH and requires a _gold_ database of chimera-free 16S sequences. The [database](http://drive5.com/uchime/uchime_download.html) was downloaded directly from drive5.com website.
 
-## 3. Bugs
+## 3. Toy example
+
+We uploaded a small dataset as a [toy example](https://github.com/saccharome/CBC/tree/master/Toy/Toy%20CCS%20dataset) as well as the files containing the [expected reports](https://github.com/saccharome/CBC/tree/master/Toy/Expected%20reports) of each CBC_script using this toy.
+
+## 4. Bugs
 
 Please submit any problems or requests [here](https://github.com/saccharome/CBC/issues).
 
-## 4. Citation
+## 5. Citation
 Armanhi, J. S. L.; de Souza, R. S. C.; de Araújo, L. M.; Okura, V. K.; Mieczkowski, P.; Imperial, J.; Arruda, P. Multiplex amplicon sequencing for microbe identification in community-based culture collections. Sci. Rep. 6, 29543, 2016. [doi:10.1038/srep29543](http://www.nature.com/articles/srep29543/).
