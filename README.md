@@ -179,7 +179,7 @@ Linux version 2.6.32-642.el6.x86_64 (mockbuild@x86-033.build.eng.bos.redhat.com)
 usearch v8.0.1517_i86linux64
 ```
 
-* 2.1.2.2. An environmental variable must be created to USEARCH in PATH, let’s say __$uv81__. Change the variable for USEARCH inside each script as required.
+* 2.1.2.2. An environmental variable must be created to USEARCH in PATH, eg. __$uv81__. Change the variable for USEARCH inside each script as required.
 
 ### 2.2. Databases
 
@@ -203,7 +203,7 @@ We uploaded a small dataset containing 100 CCSs as a [toy example](https://githu
 
 ## 4. Bugs
 
-Please submit any problems or requests [here](https://github.com/saccharome/CBC/issues).
+Please submit any problems, suggestions or requests [here](https://github.com/saccharome/CBC/issues).
 
 ## 5. Citation
 Armanhi, J. S. L.; de Souza, R. S. C.; de Araújo, L. M.; Okura, V. K.; Mieczkowski, P.; Imperial, J.; Arruda, P. Multiplex amplicon sequencing for microbe identification in community-based culture collections. Sci. Rep. 6, 29543, 2016. [doi:10.1038/srep29543](http://www.nature.com/articles/srep29543/).
