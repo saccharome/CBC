@@ -202,6 +202,4 @@ The following databases must be downloaded before proceed scripts run:
 Please submit any problems or requests [here](https://github.com/saccharome/CBC/issues).
 
 ## 4. Citation
-Armanhi, J. S. L.; de Souza, R. S. C.; de Araújo, L. M.; Okura, V. K.; Mieczkowski, P.; Imperial, J.; Arruda, P. Multiplex amplicon sequencing for microbe identification in community-based culture collections. Sci. Rep. 6, 29543, 2016.
-
-[doi:10.1038/srep29543](http://www.nature.com/articles/srep29543/).
+Armanhi, J. S. L.; de Souza, R. S. C.; de Araújo, L. M.; Okura, V. K.; Mieczkowski, P.; Imperial, J.; Arruda, P. Multiplex amplicon sequencing for microbe identification in community-based culture collections. Sci. Rep. 6, 29543, 2016. [doi:10.1038/srep29543](http://www.nature.com/articles/srep29543/).
