@@ -33,7 +33,7 @@ Microbial collections based exclusively on axenic cultures are time consuming, c
   * __rev_primer.fa__ _FASTA containing reverse primer sequence_
   * __error_margin__ _Number of margin of error for barcode prediction; eg. 3 nt_
   * __max_length__ _Maximum length accepted of sequences; eg. 1600 nt_
-  * __output_dir__Directory of outputted files_
+  * __output_dir__ _Directory of outputted files_
 * 1.1.8. Example of command line:
 
 ```bash
@@ -95,7 +95,7 @@ perl script2.pl -i demultiplexed.demult -o output_directory -ch chimera_free.fa 
 
 * 1.3.3. Alignments were performed using usearch_global algorithm from USEARCH package considering threshold of 0.97.
 
-* 1.3.4. Sequences maintained after filtering are outputted in a ___.filtered___ file.
+* 1.3.4. Sequences maintained after filtering are outputted in a __.filtered__ file.
 
 * 1.3.5. Parameters must be inputted in the following order:
 
@@ -127,7 +127,7 @@ perl script3.pl seqs.fa 16S_db.fa output_directory
 
 * 1.4.1. This script aims to cluster sequences within wells to obtain well-OTUs (wOTUs) in each single well of 96-well plates. Since might be a redundancy of microbes among wells, a second clustering is performed to obtain unique collection-OTUs (cOTUs). The script is based on [UPARSE](http://www.nature.com/nmeth/journal/v10/n10/full/nmeth.2604.html) algorithm.
 
-* 1.4.2. Files extension must be “.demult” in inputted folder.
+* 1.4.2. Files extension must be __.demult__ in inputted folder.
 
 * 1.4.3. Parameters:
 
