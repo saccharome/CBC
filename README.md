@@ -179,7 +179,7 @@ Linux version 2.6.32-642.el6.x86_64 (mockbuild@x86-033.build.eng.bos.redhat.com)
 usearch v8.0.1517_i86linux64
 ```
 
-* 2.1.2.2. An environmental variable must be created to USEARCH in PATH, e.g. __$uv81__. Change the variable for USEARCH inside each script as required.
+* 2.1.2.2. An environmental variable must be created to USEARCH in PATH, e.g. __$uv9__. Change the variable for USEARCH inside each script as required.
 
 ### 2.2. Databases
 
