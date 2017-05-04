@@ -10,9 +10,13 @@ Microbial collections based exclusively on axenic cultures are time consuming, c
 
 ### 1.1. Script #1: Demultiplexing
 
-* 1.1.1. This script aims to demultiplex a large dataset of FASTA sequences representing fragments of 16S rRNA gene from specific wells in 96-well plates.
+* 1.1.1. This script aims to demultiplex large datasets of FASTA sequences of a multiplexing 16S rRNA gene amplicon sequencing based on two-step PCR amplifications with tagged primers for plates, rows, and columns, as illustrated below. See [Fig. 1](https://www.nature.com/articles/srep29543) for image details.
 
-* 1.1.2. This script uses circular consensus sequences (CCSs) in FASTA format as input, given by PacBio RS II sequencing, and creates a directory as output. This script is exclusively designed for demultiplexing sequences that contain the same amplicon structure as [described](https://www.nature.com/articles/srep29543).
+![figure 1](https://cloud.githubusercontent.com/assets/20187988/25688738/172be2d2-3058-11e7-937d-48381bfb55c3.png)
+
+* 1.1.2. This script uses circular consensus sequences (CCSs) in FASTA format as input, given by PacBio RS II sequencing, and creates a directory as output. This script is exclusively designed for demultiplexing sequences that contain the same amplicon structure as illustrated below. See [Supp. Fig. 1b](https://www.nature.com/articles/srep29543) for image details.
+
+![supplementary figure 1](https://cloud.githubusercontent.com/assets/20187988/25688739/172e7060-3058-11e7-831b-f16087344f6c.png)
 
 * 1.1.3. Files containing sequences of _barcodes of plates_, _columns_ and _rows_, _forward_ and _reverse Nextera_ sequences, and _reverse primer_ sequence must be also inputted in FASTA format.
 
