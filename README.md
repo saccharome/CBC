@@ -161,54 +161,60 @@ perl CBC_script4.pl -i input_directory -o output_root_directory -id uparse_ID
   * __15_OTU_COLLECTION_MAP__ _Mapping reads of clustering on above-mentioned step_
   * __16_OTU_COLLECTION_TABLE__ _OTU_table construction_
 
-## 2. Installation and dependencies
+## 2. Pipeline overview
+
+Raw reads are demultiplexed and filtered for reliability and quality of CCSs. The first clustering step allows determination of which and how many microorganisms are present in each well, while the second one provides information on the redundancy of OTUs. See [Supp. Fig. 2](https://www.nature.com/articles/srep29543) for image details.
+
+![supplementary figure 2](https://cloud.githubusercontent.com/assets/20187988/25689108/30b7808c-305b-11e7-88d4-5208b6981d05.png)
+
+## 3. Installation and dependencies
 
 The scripts were written in Perl language and run in Linux environment via command line.
 
-### 2.1. Softwares
+### 3.1. Softwares
 
-#### 2.1.1 Linux
+#### 3.1.1 Linux
 
-* 2.1.1.1. We used the following version of Linux:
+* 3.1.1.1. We used the following version of Linux:
 
 ```bash
 Linux version 2.6.32-642.el6.x86_64 (mockbuild@x86-033.build.eng.bos.redhat.com)
 (gcc version 4.4.7 20120313 (Red Hat 4.4.7-17) (GCC))
 ```
 
-#### 2.1.2. USEARCH package
+#### 3.1.2. USEARCH package
 
-* 2.1.2.1. We used the following version of [USEARCH](https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btq461):
+* 3.1.2.1. We used the following version of [USEARCH](https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btq461):
 
 ```bash
 usearch v8.0.1517_i86linux64
 ```
 
-* 2.1.2.2. An environmental variable must be created to USEARCH in PATH, e.g. _$uv9_. Change the variable for USEARCH inside each script as required.
+* 3.1.2.2. An environmental variable must be created to USEARCH in PATH, e.g. _$uv9_. Change the variable for USEARCH inside each script as required.
 
-### 2.2. Databases
+### 3.2. Databases
 
 The following databases must be downloaded before proceed scripts run:
 
-#### 2.2.1. Greengenes
+#### 3.2.1. Greengenes
 
-* 2.2.1.1 Greengenes 16S rRNA gene database was downloaded from the [webpage](http://greengenes.secondgenome.com/downloads).
+* 3.2.1.1 Greengenes 16S rRNA gene database was downloaded from the [webpage](http://greengenes.secondgenome.com/downloads).
 
-* 2.2.1.2. A release must be chosen, then chose _*.fasta.gz_ file.
+* 3.2.1.2. A release must be chosen, then chose _*.fasta.gz_ file.
 
-* 2.2.1.3. In our work, we used the version “The Greengenes Database files from May, 2013”. Any other release should work, we have not tested though.
+* 3.2.1.3. In our work, we used the version “The Greengenes Database files from May, 2013”. Any other release should work, we have not tested though.
 
-#### 2.2.2. UCHIME chimera-free 16S rRNA gene database
+#### 3.2.2. UCHIME chimera-free 16S rRNA gene database
 
-* 2.2.2.1. [UCHIME](https://doi.org/10.1093/bioinformatics/btr381) is an algorithm installed with USEARCH and requires a _gold_ database of chimera-free 16S rRNA gene sequences. The [database](http://drive5.com/uchime/uchime_download.html) was downloaded directly from [drive5.com](http://www.drive5.com/) website.
+* 3.2.2.1. [UCHIME](https://doi.org/10.1093/bioinformatics/btr381) is an algorithm installed with USEARCH and requires a _gold_ database of chimera-free 16S rRNA gene sequences. The [database](http://drive5.com/uchime/uchime_download.html) was downloaded directly from [drive5.com](http://www.drive5.com/) website.
 
-## 3. Example
+## 4. Example
 
 We uploaded a small dataset of CCSs as an [example](https://github.com/saccharome/CBC/tree/master/example/ccs_dataset_example), as well as the files containing the [expected reports](https://github.com/saccharome/CBC/tree/master/example/expected_reports) of each CBC_script using this file.
 
-## 4. Bugs
+## 5. Bugs
 
 Please submit any problems, suggestions or requests [here](https://github.com/saccharome/CBC/issues).
 
-## 5. Citation
+## 6. Citation
 Armanhi, J. S. L.; de Souza, R. S. C.; de Araújo, L. M.; Okura, V. K.; Mieczkowski, P.; Imperial, J.; Arruda, P. Multiplex amplicon sequencing for microbe identification in community-based culture collections. Sci. Rep. 6, 29543, 2016. [doi:10.1038/srep29543](http://www.nature.com/articles/srep29543/).
